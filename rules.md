@@ -1,141 +1,69 @@
-# Project rules and requirements: Vibecoding Hackathon
+# Project rules and requirements: Coach (B2B AI Training Platform)
 
-This document defines the technical, business, and strategic requirements for the production-ready deliverable of the Vibecoding Hackathon, based on the official guidelines in [vibecoding-hackathon.pdf](slides/vibecoding-hackathon.pdf).
+This document defines the technical, business, and strategic requirements for the production-ready deliverable of Coach (B2B) for the Vibecoding Hackathon, based on the official guidelines in [vibecoding-hackathon.pdf](file:///c:/Users/ricca/Documents/Riccardo/Antigravity/JEIOM-Hackathon/vibecoding-hackathon.pdf).
 
 ---
 
 ## 1. Hackathon parameters and constraints
 
-* **Time limit**: 2 hours to build (strategy, financial model, production web app, and assets).
-* **Delivery mechanism**: Live URL pasted into the official team spreadsheet before the timer expires.
-* **Pitch constraints**: 1 minute and 30 seconds timed presentation. The pitch starts directly on the live website and goes straight to metrics, unit economics, and distribution.
-* **Scope rule**: Choose exactly one product (Coach B2B or Not Home B2C). Do not combine or build both.
+* **Selected product**: Coach (B2B AI Corporate Training Platform).
+* **Core value proposition**: Un formatore AI personale per ogni dipendente. L'azienda carica procedure o listini; un docente vocale AI la spiega; un avatar video simula clienti/colleghi in un role play interattivo; un coach valuta le competenze e genera analytics per i manager.
+* **Time limit**: 2 hours build phase, followed by a 90-second timed pitch.
+* **Delivery mechanism**: Public web application URL deployed on cloud infrastructure (e.g. Vercel) pasted into the official team sheet.
+* **Pitch focus**: Begins directly on the live mobile-friendly site, highlighting the product demo, go-to-market channels, 50.000 euro budget allocation, and unit economics (CAC, LTV, ROI).
 
 ---
 
 ## 2. Technical and web application requirements
 
-The deliverable must be a production-ready, deployed web application.
+The web application must be modern, modular, production-ready, and responsive.
 
-### Hosting and deployment
-* The project must be deployed to a public URL (e.g. Vercel, Netlify, or similar cloud hosting).
-* Zero broken links, zero console errors, fast initial load time (< 2 seconds).
+### Architecture and data decoupling
+* **Single source of truth data layer**: All strategy texts, budget line items, funnel metrics, and marketing copy must be loaded from a centralized configuration file (e.g., `src/data/mockData.ts`). This guarantees that updating mock data to real data takes seconds without touching component markup.
+* **Multiple visual themes / frontend styles**: Support 4 distinct design archetypes accessible via a seamless UI switcher:
+  1. *Linear Dark Tech*: Sleek slate backgrounds, subtle glows, enterprise precision.
+  2. *Vercel Modern Minimal*: High contrast monochrome, sharp typography, clean grid lines.
+  3. *Stripe Vibrant Corporate*: Crisp light background, indigo/violet accents, layered depth.
+  4. *Editorial Precision*: Warm off-white canvas, sharp editorial type, structured borders.
 
-### Responsive and mobile-first design
-* The interface must be completely optimized for mobile viewports (smartphone screens), as the evaluation explicitly tests opening the link on a mobile device.
-* Navigation, buttons, interactive modules, and text typography must be touch-friendly without overflow or layout shifts.
+### Mobile-first responsive execution
+* Must render flawlessly on desktop and mobile viewports (down to 375px width).
+* Zero layout overflow, smooth touch navigation, and fast interactive response.
 
-### The 5-second value test
-* The above-the-fold hero section must communicate the exact product offering and core benefit within 5 seconds of landing.
-* No vague taglines; the value proposition must be explicit, concrete, and tied directly to the ICP.
+### 5-second clarity test
+* The hero section must clearly communicate the target audience (HR, Sales Directors, Training Heads) and the core value proposition within 5 seconds of loading.
 
-### Interactive demo and simulator
-* **For Coach (B2B)**:
-  * Interactive landing page with clear CTA (request demo, ROI audit).
-  * Interactive simulation module showing the 4 steps: upload procedure, AI voice coach briefing, video avatar role-play with objections, and manager scoring analytics dashboard.
-  * Embedded interactive ROI and savings calculator for HR and sales executives.
-* **For Not Home (B2C)**:
-  * Interactive web app demo simulating the mobile user experience.
-  * Functional audio guide preview with player controls (play, pause, progress bar) split into 3 chapters (history, visual description, reflection).
-  * Route builder / time planner adapting to user interests, live crowd levels, and weather.
-
-### Architecture guidelines
-* Clean, modern component structure (React / Next.js / Vite + Tailwind CSS or standalone high-performance HTML5/Tailwind bundle).
-* Semantic HTML5 markup, accessible color contrast, and production asset bundling.
-
----
-
-## 3. Go-to-market and channel requirements
-
-The distribution plan must combine both digital and physical levers targeting the same ICP.
-
-### Digital levers
-* Organic social strategy: platform selection with explicit justification (e.g. LinkedIn for B2B; TikTok and Instagram for B2C; Reddit for travel discovery).
-* Paid media strategy: specific ad channels (Meta Ads, LinkedIn Ads, or Google Search), target CPM/CPC assumptions, and clear stop conditions (kill criteria if CAC exceeds target).
-
-### Physical levers
-* Tangible point-of-sale, event, or partner touchpoints:
-  * For B2B: industry congresses, executive roundtables, direct high-value mail packages, or partnership through training funds (e.g. Fondimpresa).
-  * For B2C: QR code placement in boutique hotels and Airbnbs, tourism board collaboration, local travel agency desks, or physical flyers at transit hubs.
-* All physical initiatives must feed directly into the digital funnel via trackable links or dedicated QR codes.
-
-### Partnerships and agreements
-* At least one structured B2B or distribution partnership detailing:
-  * Target partner identity.
-  * Mutual value exchange (what we offer vs. what they receive).
-  * Timing and execution roadmap.
+### Core interactive modules
+1. **Hero & value proposition**: Impactful headline, subtitle, CTAs, and trust metrics.
+2. **Interactive 4-step workflow**:
+   - Step 1: Upload (listino, procedura, scheda tecnica).
+   - Step 2: Impara (docente vocale AI interattivo).
+   - Step 3: Allenati (role-play interattivo con avatar video, obiezioni del cliente, gestione sconti).
+   - Step 4: Migliora (dashboard analytics per manager con punteggi, tempi di pratica ed esportazione Excel).
+3. **Live role-play simulator**: A functional preview where evaluators can trigger a simulated objection (e.g., "Il vostro prezzo è troppo alto") and receive instant AI feedback and score breakdown.
+4. **Go-to-market and channel strategy section**: Digital levers (LinkedIn Ads, Outbound) + physical levers (executive roundtables, Fondimpresa partnership) targeting the same ICP.
+5. **Budget breakdown (50.000 euro)**: Line-by-line interactive budget table and visual distribution chart summing exactly to 50.000 euro.
+6. **Startup unit economics & ROI calculator**: Interactive calculator showing ICP, conversion funnel, CAC, LTV (>= 3x CAC), and ROI on 50.000 euro.
+7. **Production-ready marketing assets**: Embedded section with ready-to-publish LinkedIn posts, social video scripts, and downloadable sales one-pager.
 
 ---
 
-## 4. Content and asset requirements
+## 3. Financial and unit economics rules
 
-All marketing and social collateral must be fully produced and included inside the web application or accessible via a dedicated showcase section.
-
-### Social posts ready to publish
-* Minimum of 3 complete social media posts.
-* Each post must include:
-  * Target platform.
-  * Complete, non-placeholder copy (hooks, body, call to action, hashtags).
-  * Creative asset visual concept or production-ready image/mockup.
-  * Target audience segment.
-
-### Video production assets
-* Minimum of 1 complete short-form video script (TikTok, Reels, or LinkedIn video).
-* Must contain scene-by-scene visual instructions, on-screen text, audio/voiceover copy, and exact timings (30 to 60 seconds).
+* **Virtual budget**: Exactly 50.000 euro. Sum of all items must equal 50.000 euro with zero discrepancy.
+* **Target unit metrics**:
+  * LTV >= 3.0 * CAC.
+  * ROI calculation: `(Net Revenue - 50.000) / 50.000`.
+  * Funnel stages: Impressions -> Website Visits -> Qualified Leads / Trials -> Signed Enterprise Contracts.
+* **Data status tagging**: Every metric must be tagged as either `MOCK` (provisional placeholder) or `VERIFIED` (final team data).
 
 ---
 
-## 5. Financial model and unit economics requirements
+## 4. Verification and quality tests
 
-The business plan must operate within a strict virtual budget of 50.000 euro.
-
-### Budget allocation rules
-* Exactly 50.000 euro distributed across categorized line items (e.g. paid ads, creator collaborations, physical touchpoints, tech tools, sales enablement).
-* The sum of all line items must equal exactly 50.000 euro without discrepancies.
-
-### Core economic metrics
-* **ICP (Ideal Customer Profile)**: detailed persona specification, location, pain points, and a plan to locate 10 qualified prospects tomorrow.
-* **Value proposition**: single, high-impact sentence contrasting against current market alternatives.
-* **Pricing structure**: defined price point, billing cycle (monthly/annual subscription or per-transaction), and pricing tiers.
-* **Funnel conversion milestones**: calculated conversion rates across the full funnel:
-  1. Impressions / reach
-  2. Clicks / visits
-  3. Trial / demo / lead capture
-  4. Closed paying customers
-* **CAC (Customer Acquisition Cost)**: total marketing and sales expenditure divided by total new paying customers.
-* **LTV (Lifetime Value)**: average gross margin generated per customer over their lifecycle.
-  * Mandatory rule: LTV must be at least 3x CAC (LTV/CAC >= 3.0).
-* **Initial ROI**: calculated as `(Net revenue generated - 50.000 euro) / 50.000 euro`, expressed as a percentage.
-* **North Star metric**: one primary leading KPI reviewed every Monday morning to determine business growth.
-* **Hypothesis transparency**: every metric not derived from an empirical source must be explicitly marked as an hypothesis.
-
----
-
-## 6. Verification and test suite
-
-Before final submission, the deliverable must pass this 6-point verification test:
-
-### Test 1: Mobile responsive test
-* Open the deployment URL on an actual smartphone or mobile device emulator (375px and 414px width).
-* Verify typography hierarchy, CTA touch targets, media aspect ratios, and zero horizontal scroll.
-
-### Test 2: The 5-second clarity test
-* Show the above-the-fold screen to an external viewer or fresh evaluator.
-* Confirm they can state what the product does and who it is for within 5 seconds.
-
-### Test 3: The "Ready to publish tomorrow" test
-* Inspect all social media posts and video scripts.
-* Confirm there is no "Lorem Ipsum", placeholder text, or incomplete copy. Every post must be ready for immediate publication.
-
-### Test 4: Financial sanity and budget balance test
-* Sum all budget line items: total must equal exactly 50.000 euro.
-* Check metric consistency: verify `LTV >= 3 * CAC`.
-* Verify that ROI formula is correctly applied: `(Revenue - 50.000) / 50.000`.
-
-### Test 5: Channel motivation test
-* Confirm that both digital and physical acquisition channels address the exact same ICP persona.
-* Verify each channel includes a specific rationale explaining why it was chosen over alternatives.
-
-### Test 6: Timed 90-second pitch dry-run
-* Rehearse the presentation with a hard stopwatch timer set to 1 minute and 30 seconds.
-* The pitch structure must immediately open the live web app, showcase the interactive product demo, present the distribution strategy, and conclude on the unit economics (CAC, LTV, ROI).
+1. **Mobile viewport test**: Flawless rendering on smartphone screens (iPhone / Android).
+2. **5-second test**: Evaluator understands who it is for and what it solves in under 5 seconds.
+3. **Budget math test**: Line items sum to exactly 50.000 euro.
+4. **Economic coherence test**: LTV / CAC >= 3.0.
+5. **Asset completeness test**: All social copy and video scripts are fully written without placeholder text.
+6. **Pitch 90s check**: Pitch flow can be fully articulated within 90 seconds while displaying the live site.
