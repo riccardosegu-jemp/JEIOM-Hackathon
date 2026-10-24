@@ -33,7 +33,7 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Archivo', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        display: ['Space Grotesk', 'Syne', 'Archivo', 'Helvetica Neue', 'Arial', 'sans-serif'],
         sans: ['Instrument Sans', 'Helvetica Neue', 'Arial', 'sans-serif'],
         mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
       },

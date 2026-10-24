@@ -9,7 +9,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="co-root min-h-screen flex flex-col font-sans bg-paper text-ink selection:bg-volt selection:text-on-volt">
-      <Navbar onOpenPitch={() => setPitchDrawerOpen(true)} />
+      <Navbar />
 
       <main className="flex-1">
         <FullLandingView />
@@ -17,7 +17,7 @@ export const App: React.FC = () => {
 
       <Footer />
 
-      {/* Floating 90s Pitch Runbook for hackathon presentation */}
+      {/* Floating 90s Pitch Runbook for hackathon presentation if opened */}
       <PitchDrawer
         isOpen={pitchDrawerOpen}
         onClose={() => setPitchDrawerOpen(false)}
