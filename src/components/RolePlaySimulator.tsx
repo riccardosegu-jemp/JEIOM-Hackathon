@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { coachData, PersonaScenario } from '../data/mockData';
 import { ScoreRing } from './ScoreRing';
-import { Mic, RotateCcw, Volume2, Sparkles, MessageCircle, ArrowRight, User } from 'lucide-react';
+import { Mic, RotateCcw, ArrowRight } from 'lucide-react';
 
 export const RolePlaySimulator: React.FC = () => {
   const [activePersona, setActivePersona] = useState<PersonaScenario>(coachData.personas[0]);
@@ -17,6 +17,7 @@ export const RolePlaySimulator: React.FC = () => {
 
   const handleReset = () => {
     setSelectedResponseIdx(1);
+    setIsSimulatingAudio(false);
   };
 
   return (
@@ -38,8 +39,8 @@ export const RolePlaySimulator: React.FC = () => {
         </div>
 
         {/* Persona Switcher Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
-          <span className="label text-ink-muted mr-2 hidden sm:inline">Scenario:</span>
+        <div className="flex flex-wrap items-center justify-center gap-2.5 mb-10">
+          <span className="label text-ink-muted mr-1 hidden sm:inline">Scenario:</span>
           {coachData.personas.map((persona) => {
             const isActive = persona.id === activePersona.id;
             return (
@@ -49,11 +50,11 @@ export const RolePlaySimulator: React.FC = () => {
                 className={`co-chip transition-all cursor-pointer ${
                   isActive
                     ? 'co-chip-campo font-bold shadow-sm'
-                    : 'hover:bg-sunk/80'
+                    : 'bg-sunk hover:bg-line/70 text-ink'
                 }`}
               >
                 <span className="font-semibold">{persona.name}</span>
-                <span className="opacity-70 text-[11px]">({persona.context})</span>
+                <span className="opacity-75 text-[11px] font-normal">({persona.context})</span>
               </button>
             );
           })}
@@ -62,13 +63,16 @@ export const RolePlaySimulator: React.FC = () => {
         {/* Main Grid: RoleplayCard + Responses + ScoreRing & Feedback */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: RoleplayCard (5 cols) */}
-          <div className="lg:col-span-5">
-            <div className="co-rp shadow-lift border border-line bg-card">
+          <div className="lg:col-span-5 flex justify-center lg:justify-start">
+            <div className="co-rp border border-line bg-card shadow-lift w-full max-w-[400px]">
               {/* Video Area */}
-              <div className="co-rp-video">
+              <div className="co-rp-video min-h-[260px]">
+                {/* Central Letter Avatar */}
                 <div className="co-rp-avatar">
                   <span>{activePersona.initial}</span>
                 </div>
+
+                {/* Top Overlay */}
                 <div className="co-rp-top">
                   <span className="co-chip co-chip-live bg-card">
                     In corso
@@ -77,6 +81,8 @@ export const RolePlaySimulator: React.FC = () => {
                     {activePersona.defaultTimer}
                   </span>
                 </div>
+
+                {/* Bottom Quote Overlay */}
                 <div className="co-rp-quote">
                   {activePersona.quote}
                 </div>
@@ -84,14 +90,14 @@ export const RolePlaySimulator: React.FC = () => {
 
               {/* Card Body */}
               <div className="co-rp-body">
-                <div className="label text-ink-muted">
+                <div className="label text-ink-muted mb-1">
                   {activePersona.context} · {activePersona.name}, {activePersona.role}
                 </div>
-                <div className="co-rp-title">
+                <div className="co-rp-title text-xl font-bold font-display text-ink">
                   {activePersona.scenarioTitle}
                 </div>
-                <p className="small text-ink-muted mb-4">
-                  L'avatar attende la tua risposta vocale. Nel test rapido qui a destra puoi selezionare una risposta per vedere la valutazione.
+                <p className="small text-ink-muted mb-5 leading-relaxed">
+                  L'avatar attende la tua risposta vocale. Nel test rapido qui a destra puoi selezionare una risposta per vedere la valutazione istantanea.
                 </p>
                 <div className="co-rp-actions">
                   <button
@@ -117,22 +123,22 @@ export const RolePlaySimulator: React.FC = () => {
           <div className="lg:col-span-7 space-y-6">
             {/* Interactive Response Choices */}
             <div className="bg-paper p-5 sm:p-6 rounded-md border border-line">
-              <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center justify-between mb-3.5">
                 <span className="label text-ink-muted">Scegli la tua risposta:</span>
                 <span className="text-xs font-mono text-ink-muted">1 click per valutare</span>
               </div>
 
-              <div className="space-y-2.5">
+              <div className="space-y-3">
                 {demoData.responses.map((resp, idx) => {
                   const isSelected = selectedResponseIdx === idx;
                   return (
                     <button
                       key={resp.id}
                       onClick={() => handleSelectOption(idx)}
-                      className={`w-full text-left p-4 rounded-sm border transition-all text-sm font-sans ${
+                      className={`w-full text-left p-4 rounded-sm border transition-all text-sm font-sans cursor-pointer ${
                         isSelected
-                          ? 'border-campo bg-card shadow-sm ring-1 ring-campo'
-                          : 'border-line bg-card/60 hover:bg-card hover:border-line-strong text-ink'
+                          ? 'border-campo bg-card shadow-sm ring-2 ring-campo'
+                          : 'border-line bg-card/70 hover:bg-card hover:border-line-strong text-ink'
                       }`}
                     >
                       <div className="flex items-center justify-between mb-1.5">
@@ -154,7 +160,7 @@ export const RolePlaySimulator: React.FC = () => {
 
             {/* CoachFeedback Component & Score Display */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-              {/* ScoreRing Card (4 cols) */}
+              {/* ScoreRing Card (5 cols) */}
               <div className="md:col-span-5 bg-paper p-6 rounded-md border border-line flex flex-col items-center justify-center text-center">
                 <span className="label text-ink-muted mb-3">Punteggio del coach</span>
                 <ScoreRing score={currentResponse.score} size={130} />

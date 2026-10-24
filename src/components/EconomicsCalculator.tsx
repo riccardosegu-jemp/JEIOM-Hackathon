@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { coachData } from '../data/mockData';
-import { Calculator, ArrowRight, TrendingUp, CheckCircle, HelpCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp } from 'lucide-react';
 
 export const EconomicsCalculator: React.FC = () => {
   const [userCount, setUserCount] = useState<number>(300);
@@ -19,67 +19,76 @@ export const EconomicsCalculator: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
-          <span className="label text-ink-muted">Modello di business & metriche</span>
+          <span className="label text-ink-muted">Modello di business & prezzi</span>
           <h2 className="display-l text-ink mt-2 mb-3">
-            Prezzi, sostenibilità e ritorno d'investimento
+            Prezzi chiari, sostenibilità e ritorno d'investimento
           </h2>
           <p className="lead text-ink-muted">
             420 € a persona l'anno, circa metà dell'aula tradizionale, senza togliere nessuno dalla filiale. Margine lordo solido (70%) e rientro del CAC in meno di 2 mesi.
           </p>
         </div>
 
-        {/* Pricing Tiers Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        {/* Polished 3 Pricing Tiers Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 items-stretch">
           {economics.pricingTiers.map((tier, idx) => (
             <div
               key={idx}
-              className={`rounded-md border p-6 flex flex-col justify-between transition-all ${
+              className={`rounded-md border p-6 sm:p-7 flex flex-col justify-between transition-all bg-card ${
                 tier.popular
-                  ? 'border-campo bg-card shadow-lift ring-2 ring-campo relative'
-                  : 'border-line bg-card'
+                  ? 'border-campo ring-2 ring-campo shadow-lift'
+                  : 'border-line shadow-sm hover:border-line-strong'
               }`}
             >
-              {tier.popular && (
-                <div className="absolute -top-3 left-6">
-                  <span className="co-chip co-chip-volt text-xs font-bold">
-                    Scelta consigliata
-                  </span>
-                </div>
-              )}
-
               <div>
-                <span className="label text-ink-muted block mb-1">
-                  {tier.name}
-                </span>
-                <div className="flex items-baseline gap-1 my-3">
-                  <span className="font-mono font-bold text-4xl text-ink tracking-tight">
+                {/* Header with Title and Optional Badge */}
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <h3 className="title text-xl text-ink font-bold">
+                    {tier.name}
+                  </h3>
+                  {tier.popular && (
+                    <span className="co-chip co-chip-volt text-xs font-bold">
+                      Consigliato
+                    </span>
+                  )}
+                </div>
+
+                {/* Price */}
+                <div className="flex items-baseline gap-2 my-4">
+                  <span className="font-mono font-bold text-4xl sm:text-5xl text-ink tracking-tight">
                     {tier.price}
                   </span>
-                  <span className="text-xs font-sans text-ink-muted">
+                  <span className="text-xs font-sans text-ink-muted font-medium">
                     {tier.period}
                   </span>
                 </div>
 
-                <div className="p-2.5 rounded-sm bg-sunk/60 text-xs font-mono text-ink mb-4 font-medium">
+                {/* Seats info */}
+                <div className="p-3 rounded-sm bg-sunk/60 text-xs font-mono text-ink mb-4 font-semibold border border-line/60">
                   {tier.seats}
                 </div>
 
-                <p className="body text-sm text-ink-muted mb-4">
+                {/* Description */}
+                <p className="body text-sm text-ink-muted mb-5 leading-relaxed">
                   {tier.desc}
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-line">
-                <p className="text-xs font-mono text-volt-text font-bold mb-4">
+              {/* Bottom Details & CTA Button */}
+              <div className="pt-5 border-t border-line space-y-4">
+                <div className="p-3 rounded-sm bg-paper border border-line text-xs font-mono text-volt-text font-bold">
                   {tier.highlight}
-                </p>
+                </div>
+
                 <a
                   href="#simulatore"
-                  className={`co-btn co-btn-sm w-full justify-center ${
-                    tier.popular ? 'co-btn-primary' : 'co-btn-secondary'
+                  className={`co-btn w-full justify-center text-center ${
+                    tier.popular
+                      ? 'co-btn-primary'
+                      : 'co-btn-secondary'
                   }`}
                 >
-                  {tier.popular ? 'Prova un role play' : 'Richiedi dettagli'}
+                  <span>{tier.popular ? 'Prova un role play' : 'Richiedi dettagli'}</span>
+                  <ArrowRight className="w-4 h-4 ml-1" />
                 </a>
               </div>
             </div>
@@ -136,7 +145,7 @@ export const EconomicsCalculator: React.FC = () => {
                 </div>
                 <div>
                   <span className="text-ink-muted block">Costo licenza annuale Coach:</span>
-                  <span className="font-mono font-bold text-base text-campo">
+                  <span className="font-mono font-bold text-base text-campo font-bold">
                     {coachAnnualCost.toLocaleString('it-IT')} € / anno
                   </span>
                 </div>
@@ -144,12 +153,12 @@ export const EconomicsCalculator: React.FC = () => {
             </div>
 
             {/* Savings Result (5 cols) */}
-            <div className="lg:col-span-5 bg-campo text-campo-text p-6 rounded-md">
+            <div className="lg:col-span-5 bg-campo text-campo-text p-6 sm:p-7 rounded-md">
               <span className="label text-volt mb-2 block">Risparmio netto stimato</span>
               <div className="font-mono font-bold text-4xl text-white mb-2">
                 {netSavings.toLocaleString('it-IT')} €
               </div>
-              <p className="small text-campo-text/80 mb-4">
+              <p className="small text-campo-text/85 mb-4 leading-relaxed">
                 Circa il <span className="text-volt font-bold">{savingsPct}% in meno</span> rispetto ai corsi d'aula esterni. E l'intero canone di Coach può essere rimborsato tramite il conto FBA della banca.
               </p>
               <div className="p-3 bg-white/10 rounded-sm text-xs font-mono text-campo-text/90">
@@ -196,7 +205,7 @@ export const EconomicsCalculator: React.FC = () => {
             <span className="label text-ink-muted mb-3 block">Imbuto di conversione a 12 mesi</span>
             <div className="space-y-3">
               {economics.funnel.map((stage, idx) => (
-                <div key={idx} className="p-3 rounded-sm bg-paper border border-line">
+                <div key={idx} className="p-3.5 rounded-sm bg-paper border border-line">
                   <div className="flex items-center justify-between mb-1 text-xs">
                     <span className="font-bold text-ink">{stage.stage}</span>
                     <span className="font-mono font-bold text-campo">
