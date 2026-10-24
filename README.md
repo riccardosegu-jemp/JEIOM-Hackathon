@@ -20,11 +20,13 @@ La repository e organizzata nel seguente modo:
 JEIOM-Hackathon/
 ├── .gitignore
 ├── README.md
+├── rules.md
 └── slides/
     └── vibecoding-hackathon.pdf
 ```
 
 - **[slides/vibecoding-hackathon.pdf](slides/vibecoding-hackathon.pdf)**: Presentazione ufficiale dell'evento (23 slide) con regole, dettagli sui prodotti, canali e criteri di valutazione.
+- **[rules.md](rules.md)**: Linee guida tecniche, criteri di verifica, requisiti go-to-market e modello economico dettagliato per il deliverable.
 
 ---
 
