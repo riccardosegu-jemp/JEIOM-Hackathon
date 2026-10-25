@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { coachData } from '../data/mockData';
-import { useTheme } from '../context/ThemeContext';
-import { FileSpreadsheet, Clock, BarChart3, Award } from 'lucide-react';
+import { FileSpreadsheet } from 'lucide-react';
 
 export const ManagerDashboardPreview: React.FC = () => {
   const [downloadSuccess, setDownloadSuccess] = useState(false);

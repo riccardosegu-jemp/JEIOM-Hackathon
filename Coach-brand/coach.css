@@ -1,4 +1,4 @@
-/* Coach — identità di marca. Colori, caratteri, spaziature e componenti.
+/* Coach - identità di marca. Colori, caratteri, spaziature e componenti.
    Collega questo file e aggiungi class="co-root" al <body>.
    Tema scuro: automatico, oppure forzalo con data-theme="dark" su <html>. */
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@500;700&display=swap");
@@ -96,7 +96,7 @@
 .timer { font-family:var(--font-mono); font-size:14px; line-height:20px; font-weight:500; }
 
 /* Componenti */
-/* Coach — classi dei componenti. Si appoggiano alle variabili di tokens.css. */
+/* Coach - classi dei componenti. Si appoggiano alle variabili di tokens.css. */
 .co-root{font-family:var(--font-sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
 .co-root *{box-sizing:border-box}
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import { coachData } from '../data/mockData';
-import { Landmark, ArrowRight, ShieldCheck, CheckCircle2, FileCheck, Users, HelpCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export const GtmStrategySection: React.FC = () => {
   return (
@@ -97,7 +96,7 @@ export const GtmStrategySection: React.FC = () => {
                 <span className="co-chip co-chip-campo text-xs mb-3">2. Presenza istituzionale</span>
                 <h4 className="title text-xl text-ink mb-2">Eventi ABI e colazioni riservate</h4>
                 <p className="body text-ink-muted text-sm leading-relaxed mb-4">
-                  Partecipazione a Il Salone dei Pagamenti (ABIEventi) con role play dal vivo allo stand, più 3 colazioni riservate per 8–10 responsabili formazione a Milano e Roma.
+                  Partecipazione a Il Salone dei Pagamenti (ABIEventi) con role play dal vivo allo stand, più 3 colazioni riservate per 8-10 responsabili formazione a Milano e Roma.
                 </p>
               </div>
               <div className="pt-3 border-t border-line text-xs font-mono text-ink-muted">

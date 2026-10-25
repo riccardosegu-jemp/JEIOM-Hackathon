@@ -6,7 +6,7 @@
 
 ## In una frase
 
-> **Banca italiana con 500–3.000 dipendenti e una rete di filiali, che deve formare centinaia di consulenti su prodotti e regole che cambiano spesso, senza toglierli dalla filiale e dimostrando chi è davvero preparato.**
+> **Banca italiana con 500-3.000 dipendenti e una rete di filiali, che deve formare centinaia di consulenti su prodotti e regole che cambiano spesso, senza toglierli dalla filiale e dimostrando chi è davvero preparato.**
 
 ---
 
@@ -15,7 +15,7 @@
 | Tema | Decisione | Perché |
 |---|---|---|
 | **Settore** | Bancario | La formazione dei consulenti è richiesta dalle regole (MiFID II, IVASS per chi colloca polizze), quindi il budget esiste già. Le conversazioni da allenare sono esattamente quelle di Coach. |
-| **Dimensione** | 500–3.000 dipendenti: grandi, ma non troppo | Tanti dipendenti significano tanti utenti e contratti grandi. Sotto i 3.000 si evitano le gare lunghissime dei grandi gruppi, che con 50.000 € non si chiudono in un anno. |
+| **Dimensione** | 500-3.000 dipendenti: grandi, ma non troppo | Tanti dipendenti significano tanti utenti e contratti grandi. Sotto i 3.000 si evitano le gare lunghissime dei grandi gruppi, che con 50.000 € non si chiudono in un anno. |
 | **Quante sono** | Circa **50 banche** nella lista *(ipotesi da verificare)* | Le banche sono poche e note per nome, quindi si lavorano una per una (account-based marketing). |
 | **Chi paga** | Responsabile formazione o HR | Gestisce il budget per la formazione e il fondo FBA. |
 | **Chi sente il bisogno** | Responsabile della rete commerciale | Vede lo sconto concesso, i clienti persi e i consulenti nuovi che ci mettono mesi a rendere. |
@@ -42,7 +42,7 @@ In una banca di questa fascia ipotizziamo **circa 300 utenti** per cliente *(ipo
 
 ## Il problema che risolviamo
 
-1. **I prodotti e le regole cambiano spesso.** L'aula arriva tardi e costa: ipotizziamo **600–1.000 € a persona l'anno**, più il costo della filiale scoperta *(ipotesi)*.
+1. **I prodotti e le regole cambiano spesso.** L'aula arriva tardi e costa: ipotizziamo **600-1.000 € a persona l'anno**, più il costo della filiale scoperta *(ipotesi)*.
 2. **La formazione va dimostrata.** Le linee guida ESMA chiedono una valutazione annuale delle competenze e una formazione continua con verifica di quanto appreso. L'aula registra le presenze, ma non dice chi sa farlo.
 3. **Le conversazioni difficili non si allenano.** Il cliente che vuole spostare i risparmi, il reclamo, la rinegoziazione del mutuo, la polizza proposta senza forzare: oggi si imparano sbagliando con i clienti veri.
 

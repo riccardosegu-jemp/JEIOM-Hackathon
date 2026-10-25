@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { coachData } from '../data/mockData';
-import { useTheme } from '../context/ThemeContext';
-import { Upload, Headphones, Video, TrendingUp, FileText, CheckCircle, ArrowRight } from 'lucide-react';
+import { Upload, Headphones, Video, TrendingUp, FileText, ArrowRight } from 'lucide-react';
 
 export const WorkflowSteps: React.FC = () => {
   const [activeStep, setActiveStep] = useState(1);

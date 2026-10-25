@@ -65,10 +65,25 @@ Last updated: Version 1.0.1 (Frontend and Mock Data Architecture Complete)
 
 ---
 
-## Version 1.1.0 - Ingestion of real team data (upcoming phase)
-* `[TODO]` Ingest real ICP, company target, and value proposition from team file.
-* `[TODO]` Ingest real budget allocation lines (50.000 euro).
-* `[TODO]` Ingest real marketing channels, sponsor agreements, and partnership terms.
-* `[TODO]` Ingest real team pricing tiers and unit metrics.
-* `[TODO]` Update [src/data/mockData.ts](file:///c:/Users/ricca/Documents/Riccardo/Antigravity/JEIOM-Hackathon/src/data/mockData.ts) and transition tags from `MOCKED` to `VERIFIED`.
-* `[TODO]` Final deployment rehearsal for the 90-second pitch.
+## Version 1.1.0 - Ingestion of real team data
+* `[DONE]` Ingest real ICP, company target, and value proposition from strategy files.
+* `[DONE]` Ingest real budget allocation lines (50.000 euro across 9 items).
+* `[DONE]` Ingest real marketing channels, sponsor agreements (Salone dei Pagamenti ABI), and FBA partnership terms.
+* `[DONE]` Ingest real team pricing tiers (35 euro/seat/month, setup 5k, pilot 10k) and unit metrics (CAC 12.500 euro, LTV 264.600 euro, LTV/CAC 21x, ROI +323%).
+* `[DONE]` Update [src/data/mockData.ts](file:///c:/Users/ricca/Documents/Riccardo/Antigravity/JEIOM-Hackathon/src/data/mockData.ts) and transition tags from `MOCKED` to `VERIFIED`.
+
+---
+
+## Version 1.2.0 - Production readiness and code cleanup
+* `[DONE]` Dead code elision: removed unused views (`PitchModeView.tsx`, `GtmHubView.tsx`).
+* `[DONE]` Context cleanup: removed obsolete `ThemeContext.tsx` and unused imports.
+* `[DONE]` Component cleanup: removed orphaned `PitchDrawer.tsx` and unreachable state in `App.tsx`.
+* `[DONE]` Import cleanup: pruned 28 unused imports across 10 components.
+* `[DONE]` Compiler hardening: enabled `noUnusedLocals` and `noUnusedParameters` in `tsconfig.json`.
+* `[DONE]` Assets reorganization: migrated root `video e immagini/` into `public/media/` (`avatar-giulia.mp4`, `avatar-giulia.jpg`).
+* `[DONE]` Feature integration: connected real avatar video to `RolePlaySimulator.tsx` with fallback support.
+* `[DONE]` SEO and meta tags: configured OpenGraph, Twitter card, theme color, and semantic metadata in `index.html`.
+* `[DONE]` Performance optimization: removed redundant `@import` font rule in `index.css`.
+* `[DONE]` Tooling: added `npm run lint` typecheck script to `package.json`.
+* `[DONE]` Formatting compliance: normalized all en-dashes and em-dashes to standard hyphens across the entire repo.
+* `[DONE]` Verification: validated build with `npm run lint` and `npm run build` (exited code 0).

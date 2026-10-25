@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-[var(--on-campo)]/70 gap-4">
           <p>
-            Coach B2B · Settore Bancario (500–3.000 dipendenti). Finanziabile con Fondo FBA.
+            Coach B2B · Settore Bancario (500-3.000 dipendenti). Finanziabile con Fondo FBA.
           </p>
           <div className="flex items-center gap-4 font-mono">
             <span>Versione 2.0.0-brand</span>

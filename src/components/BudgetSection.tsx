@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { coachData } from '../data/mockData';
-import { CheckCircle2, AlertCircle, PieChart, ShieldAlert } from 'lucide-react';
 
 export const BudgetSection: React.FC = () => {
   const [selectedFilter, setSelectedFilter] = useState<string>('Tutti');
@@ -137,15 +136,15 @@ export const BudgetSection: React.FC = () => {
             <h4 className="title text-lg text-ink mb-3">Tre fasi di roll-out</h4>
             <div className="space-y-3 text-xs font-sans">
               <div className="flex items-start gap-2">
-                <span className="font-mono font-bold text-ink shrink-0">Mesi 1–3:</span>
+                <span className="font-mono font-bold text-ink shrink-0">Mesi 1-3:</span>
                 <span className="text-ink-muted">Preparazione (~22.000 €). Lista 50 banche, dossier sicurezza DORA, demo bancaria, avvio LinkedIn e vendita diretta, prima colazione.</span>
               </div>
               <div className="flex items-start gap-2">
-                <span className="font-mono font-bold text-ink shrink-0">Mesi 3–6:</span>
+                <span className="font-mono font-bold text-ink shrink-0">Mesi 3-6:</span>
                 <span className="text-ink-muted">Spinta (~23.000 €). Eventi ABI, webinar con partner, altre colazioni, avvio dei primi pilot retribuiti.</span>
               </div>
               <div className="flex items-start gap-2">
-                <span className="font-mono font-bold text-ink shrink-0">Mesi 6–12:</span>
+                <span className="font-mono font-bold text-ink shrink-0">Mesi 6-12:</span>
                 <span className="text-ink-muted">Chiusura (~5.000 €). Firma contratti definitivi, referral al partner, caso studio usato come leva per le altre banche.</span>
               </div>
             </div>

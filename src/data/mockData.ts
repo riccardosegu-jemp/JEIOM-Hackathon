@@ -59,7 +59,7 @@ export const coachData = {
     secondaryCta: 'Guarda la demo',
     problemNumbers: [
       {
-        num: '600–1.000 €',
+        num: '600-1.000 €',
         label: 'Costo aula all\'anno a persona',
         note: 'Più il costo della filiale scoperta (ipotesi di mercato)',
       },
@@ -268,11 +268,11 @@ export const coachData = {
   strategy: {
     icp: {
       tag: 'ICP Convalidato',
-      headline: 'Banche italiane con 500–3.000 dipendenti e rete di filiali.',
+      headline: 'Banche italiane con 500-3.000 dipendenti e rete di filiali.',
       summary: 'La formazione dei consulenti è obbligatoria per legge (MiFID II, IVASS), quindi il budget esiste già. Sotto i 3.000 dipendenti si evitano gare lunghissime e si chiudono 4 contratti con 50.000 € di budget.',
       targetList: 'Circa 50 banche regionali, popolari e gruppi BCC in Italia lavorate con account-based marketing.',
       painPoints: [
-        'I prodotti e le regole cambiano spesso: l\'aula arriva tardi e costa 600–1.000 € a persona l\'anno.',
+        'I prodotti e le regole cambiano spesso: l\'aula arriva tardi e costa 600-1.000 € a persona l\'anno.',
         'La formazione va dimostrata: le linee guida ESMA chiedono la verifica delle competenze, non la sola presenza in aula.',
         'Le conversazioni difficili oggi si imparano sbagliando con i clienti veri in filiale.',
       ],
@@ -315,7 +315,7 @@ export const coachData = {
         amount: 10000,
         sharePercentage: 20,
         channelType: 'Fisico',
-        description: 'Presenza a 1–2 eventi del settore (es. Il Salone dei Pagamenti di ABI con ABIServizi) con role play dal vivo allo stand.',
+        description: 'Presenza a 1-2 eventi del settore (es. Il Salone dei Pagamenti di ABI con ABIServizi) con role play dal vivo allo stand.',
         rationale: 'Nel settore bancario la fiducia e la prova dal vivo sbloccano i decisori.',
         kpi: 'Almeno 7 conversazioni qualificate con banche della lista, 1 contratto firmato.',
         stopCondition: 'Se il primo evento porta meno di 3 conversazioni qualificate, il secondo viene cancellato.',
@@ -359,9 +359,9 @@ export const coachData = {
         amount: 4000,
         sharePercentage: 8,
         channelType: 'Fisico',
-        description: '3 incontri riservati con 8–10 responsabili formazione di banche a Milano, Roma e Nord-Est.',
+        description: '3 incontri riservati con 8-10 responsabili formazione di banche a Milano, Roma e Nord-Est.',
         rationale: 'Formato intimo, autorevole e a basso costo per contatto. Titolo: "Come cambia la formazione obbligatoria con l\'AI".',
-        kpi: '24–30 decisori incontrati di persona, conversioni a pilot.',
+        kpi: '24-30 decisori incontrati di persona, conversioni a pilot.',
         stopCondition: 'Se le conferme sono meno di 6 per incontro.',
       },
       {
@@ -496,7 +496,7 @@ export const coachData = {
       note: 'Anche chiudendo la metà dei clienti previsti, il modello economico è ampiamente sostenibile.',
     },
     funnel: [
-      { stage: '1. Banche nella lista (500–3.000 dip.)', volume: 50, conversionRate: '100%', description: 'Tutte le banche regionali, popolari e BCC della fascia target.' },
+      { stage: '1. Banche nella lista (500-3.000 dip.)', volume: 50, conversionRate: '100%', description: 'Tutte le banche regionali, popolari e BCC della fascia target.' },
       { stage: '2. Banche con cui parliamo davvero', volume: 18, conversionRate: '36%', description: 'Decision-maker con cui si apre un tavolo di confronto qualificato.' },
       { stage: '3. Pilot bancari pagati (10.000 €)', volume: 7, conversionRate: '39%', description: 'Test su 30 consulenti con scenari personalizzati.' },
       { stage: '4. Contratti annuali firmati', volume: 4, conversionRate: '57%', description: 'Adozione su tutta la rete commerciale della banca.' },
@@ -511,7 +511,7 @@ export const coachData = {
         name: '1. Il momento esatto',
         channel: 'LinkedIn Carosello (1080 × 1350)',
         hook: 'Il cliente chiede il 12% di sconto. Che cosa rispondi?',
-        structure: 'Slide 1 su campo: domanda provocatoria. Slide 2–4 su paper: tre risposte possibili con punteggi in JetBrains Mono. Slide 5: riscontro del coach con il minuto esatto.',
+        structure: 'Slide 1 su campo: domanda provocatoria. Slide 2-4 su paper: tre risposte possibili con punteggi in JetBrains Mono. Slide 5: riscontro del coach con il minuto esatto.',
         copyText: `Il 12% di sconto chiesto al rinnovo.
 
 Tre risposte possibili:
@@ -529,7 +529,7 @@ Rispondi nei commenti, domani pubblichiamo l'analisi del coach.
         name: '2. Prima e dopo',
         channel: 'Video Verticale 9:16 (30 secondi)',
         hook: 'Un consulente affronta Giulia due volte.',
-        structure: '0–3s testo grande su volt: "Tentativo 1". 3–12s role play esitante, punteggio 2,4. 12–15s stacco su campo: "Tentativo 11". 15–25s risposta sicura, punteggio 4,6 che sale con l\'anello. 25–30s logo negativo e payoff.',
+        structure: '0-3s testo grande su volt: "Tentativo 1". 3-12s role play esitante, punteggio 2,4. 12-15s stacco su campo: "Tentativo 11". 15-25s risposta sicura, punteggio 4,6 che sale con l\'anello. 25-30s logo negativo e payoff.',
         copyText: `Tentativo 1: cede il 10% in 4 secondi. Punteggio 2,4.
 Tentativo 11: ancora i 42.000 € di margine con tono fermo. Punteggio 4,6.
 
@@ -556,27 +556,4 @@ In palestra sbaglia 11 volte, riceve il riscontro al secondo esatto, ed entra pr
       },
     ],
   },
-
-  pitchRunbook: [
-    {
-      timing: '00:00 – 00:15',
-      title: 'Il problema & Payoff',
-      cue: '«Allenati prima che conti. L\'aula costa 1.000 € a persona e si dimentica in una settimana. Coach trasforma listini e procedure in allenamenti vocali e video.»',
-    },
-    {
-      timing: '00:15 – 00:40',
-      title: 'Demo live & Anello di progresso',
-      cue: '«Mostriamo Giulia: "Il vostro concorrente mi fa il 12%". Tre risposte, feedback al minuto 03:52, anello di punteggio 4,6 su 5. Chi dirige vede la squadra in tempo reale ed esporta su Excel.»',
-    },
-    {
-      timing: '00:40 – 01:05',
-      title: 'ICP, Mercato & Leva FBA',
-      cue: '«Target: 50 banche italiane da 500 a 3.000 dipendenti. La leva chiave è FBA (Fondo Banche Assicurazioni): la banca finanzia il 100% con contributi già versati, a costo zero sul budget ordinario.»',
-    },
-    {
-      timing: '01:05 – 01:30',
-      title: 'Budget 50k & Unit Economics',
-      cue: '«50.000 € esatti su 9 voci mirate. 4 banche clienti a 126.000 € all\'anno (35 €/utente/mese). CAC 12.500 €, LTV 264.600 €, LTV/CAC 21x (minimo 3x). ROI anno 1: +323%. Anche nello scenario prudente resta a 10,6x.»',
-    },
-  ],
 };

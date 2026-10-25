@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { coachData, PersonaScenario } from '../data/mockData';
 import { ScoreRing } from './ScoreRing';
-import { Mic, RotateCcw, ArrowRight } from 'lucide-react';
+import { Mic, RotateCcw } from 'lucide-react';
 
 export const RolePlaySimulator: React.FC = () => {
   const [activePersona, setActivePersona] = useState<PersonaScenario>(coachData.personas[0]);
@@ -66,14 +66,23 @@ export const RolePlaySimulator: React.FC = () => {
           <div className="lg:col-span-5 flex justify-center lg:justify-start">
             <div className="co-rp border border-line bg-card shadow-lift w-full max-w-[400px]">
               {/* Video Area */}
-              <div className="co-rp-video min-h-[260px]">
-                {/* Central Letter Avatar */}
-                <div className="co-rp-avatar">
-                  <span>{activePersona.initial}</span>
-                </div>
+              <div className="co-rp-video min-h-[260px] relative overflow-hidden bg-black/40">
+                {activePersona.id === 'giulia' ? (
+                  <video
+                    src="/media/avatar-giulia.mp4"
+                    poster="/media/avatar-giulia.jpg"
+                    controls
+                    playsInline
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="co-rp-avatar">
+                    <span>{activePersona.initial}</span>
+                  </div>
+                )}
 
                 {/* Top Overlay */}
-                <div className="co-rp-top">
+                <div className="co-rp-top pointer-events-none">
                   <span className="co-chip co-chip-live bg-card">
                     In corso
                   </span>
@@ -83,7 +92,7 @@ export const RolePlaySimulator: React.FC = () => {
                 </div>
 
                 {/* Bottom Quote Overlay */}
-                <div className="co-rp-quote">
+                <div className="co-rp-quote pointer-events-none">
                   {activePersona.quote}
                 </div>
               </div>

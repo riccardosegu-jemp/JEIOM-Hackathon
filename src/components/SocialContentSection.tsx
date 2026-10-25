@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { coachData } from '../data/mockData';
-import { useTheme } from '../context/ThemeContext';
-import { Share2, Copy, Check, Send } from 'lucide-react';
+import { Share2, Copy, Check } from 'lucide-react';
 
 export const SocialContentSection: React.FC = () => {
   const [selectedFormatIdx, setSelectedFormatIdx] = useState(0);

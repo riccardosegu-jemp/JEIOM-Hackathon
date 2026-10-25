@@ -1,6 +1,6 @@
 # Coach · Prezzi, imbuto, CAC, LTV e ROI
 
-*Vibecoding Hackathon · Next Leaders · 24 ottobre 2026 · Prodotto scelto: Coach (B2B) · Cliente: banche con 500–3.000 dipendenti*
+*Vibecoding Hackathon · Next Leaders · 24 ottobre 2026 · Prodotto scelto: Coach (B2B) · Cliente: banche con 500-3.000 dipendenti*
 
 ---
 
@@ -31,11 +31,11 @@
 |---|---:|---:|---:|
 | Ricavo all'anno per banca (300 utenti) | 72.000 € | **126.000 €** | 144.000 € |
 | Costo per persona l'anno | 240 € | **420 €** | 480 € |
-| Risparmio rispetto all'aula (600–1.000 € *ipotesi*) | molto alto | **circa la metà** | ancora chiaro |
-| Margine con un costo dell'AI di 9–18 €/utente/mese *(ipotesi)* | 10–55% ⚠️ | **49–74%** | 55–78% |
+| Risparmio rispetto all'aula (600-1.000 € *ipotesi*) | molto alto | **circa la metà** | ancora chiaro |
+| Margine con un costo dell'AI di 9-18 €/utente/mese *(ipotesi)* | 10-55% ⚠️ | **49-74%** | 55-78% |
 | Percezione per una banca | rischia di sembrare poco serio | **fornitore credibile** | premium, firma più lenta |
 
-Il costo dell'AI va calcolato così: ipotizziamo 2 role play da 10 minuti a settimana, cioè circa 90 minuti al mese, a 0,10–0,20 € al minuto tra video, voce e modello. A 20 € al mese, se il prodotto funziona e la gente lo usa, il margine sparisce. A 35 € resta sano.
+Il costo dell'AI va calcolato così: ipotizziamo 2 role play da 10 minuti a settimana, cioè circa 90 minuti al mese, a 0,10-0,20 € al minuto tra video, voce e modello. A 20 € al mese, se il prodotto funziona e la gente lo usa, il margine sparisce. A 35 € resta sano.
 
 **Per il pitch:** "**420 € a persona l'anno, circa metà dell'aula**, senza togliere nessuno dalla filiale."
 
@@ -45,7 +45,7 @@ Il costo dell'AI va calcolato così: ipotizziamo 2 role play da 10 minuti a sett
 
 | Passaggio | Numero | Conversione |
 |---|---:|---:|
-| Banche nella lista (500–3.000 dipendenti) | 50 | — |
+| Banche nella lista (500-3.000 dipendenti) | 50 | - |
 | Banche con cui parliamo davvero | 18 | 36% |
 | Pilot pagati | 7 | 39% |
 | **Contratti firmati** | **4** | **57%** |
@@ -59,7 +59,7 @@ Da dove arrivano: vendita diretta + LinkedIn 2 clienti, eventi + colazioni di la
 | Metrica | Valore | Come si calcola |
 |---|---:|---|
 | **Ricavo all'anno per cliente** | **126.000 €** | 300 utenti × 35 € × 12 mesi |
-| **Margine lordo** | **70%** *(ipotesi)* | Prudente, dentro la forchetta 49–74% calcolata sopra |
+| **Margine lordo** | **70%** *(ipotesi)* | Prudente, dentro la forchetta 49-74% calcolata sopra |
 | **CAC** | **12.500 €** | 50.000 € / 4 clienti |
 | **LTV** | **264.600 €** | 126.000 € × 70% × 3 anni di durata media *(ipotesi)* |
 | **LTV / CAC** | **21×** | 264.600 € / 12.500 €. La soglia minima è 3× |
@@ -68,7 +68,7 @@ Da dove arrivano: vendita diretta + LinkedIn 2 clienti, eventi + colazioni di la
 
 ### ROI iniziale (anno 1)
 
-Con le banche il ciclo di vendita è lungo, 4–9 mesi, quindi i contratti partono in media a metà anno.
+Con le banche il ciclo di vendita è lungo, 4-9 mesi, quindi i contratti partono in media a metà anno.
 
 | Voce di ricavo | € |
 |---|---:|

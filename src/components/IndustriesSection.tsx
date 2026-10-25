@@ -1,7 +1,5 @@
 import React from 'react';
 import { coachData } from '../data/mockData';
-import { useTheme } from '../context/ThemeContext';
-import { Landmark, ShieldCheck, Briefcase, HelpCircle, Users, Sparkles } from 'lucide-react';
 
 export const IndustriesSection: React.FC = () => {
   const personas = coachData.personas;

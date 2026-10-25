@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { coachData } from '../data/mockData';
 import { Menu, X, ArrowRight } from 'lucide-react';
 
 export const Navbar: React.FC = () => {

@@ -1,6 +1,6 @@
 # Coach · Canali, sponsorizzazioni, partnership e distributori
 
-*Vibecoding Hackathon · Next Leaders · 24 ottobre 2026 · Prodotto scelto: Coach (B2B) · Cliente: banche con 500–3.000 dipendenti*
+*Vibecoding Hackathon · Next Leaders · 24 ottobre 2026 · Prodotto scelto: Coach (B2B) · Cliente: banche con 500-3.000 dipendenti*
 
 ---
 
@@ -21,7 +21,7 @@
 | **Il Salone dei Pagamenti** (ABI con ABIServizi, Milano) | Presenza nell'area startup o fintech, oppure una sponsorizzazione minore, con un role play dal vivo allo stand | È l'evento più grande del settore bancario italiano. L'edizione 2025 si è tenuta all'Allianz MiCo di Milano dal 29 al 31 ottobre. Per il 2026 ABIServizi ha già pubblicato le proposte di sponsorizzazione. | Esiste. Costi e pacchetti da verificare nel PDF ufficiale |
 | **Altri eventi ABIEventi** sulla formazione e sulle risorse umane | Un intervento o un tavolo sul tema "AI e formazione obbligatoria" | ABIServizi organizza ogni anno un calendario di eventi per il settore | Esiste il calendario. Evento specifico da scegliere |
 | **Bancaforte** (media di ABIServizi) | Un articolo o un caso studio dopo il primo pilot | È il media partner degli eventi ABI e lo leggono i decisori delle banche | Esiste. Formato da verificare |
-| **Colazioni di lavoro Coach** | 3 incontri riservati con 8–10 responsabili formazione, a Milano, Roma e nel Nord-Est | Pochi invitati, scelti dalla lista: costa poco per contatto e il contatto è qualificato | Le organizziamo noi |
+| **Colazioni di lavoro Coach** | 3 incontri riservati con 8-10 responsabili formazione, a Milano, Roma e nel Nord-Est | Pochi invitati, scelti dalla lista: costa poco per contatto e il contatto è qualificato | Le organizziamo noi |
 
 ## 2 · Partnership (chi fa un pezzo di strada con noi)
 
@@ -46,7 +46,7 @@
 |---|---|---|---|
 | **LinkedIn Ads** (7.000 €) | Annunci mostrati solo ai dipendenti delle 50 banche della lista, nei ruoli formazione, HR e rete commerciale | 3 mesi, poi si valuta | Se dopo 6 settimane non hanno portato nessun incontro |
 | **LinkedIn organico** | Post del fondatore: role play di 30 secondi, prima e dopo, numeri dei pilot | 3 post a settimana | Mai: costa solo tempo |
-| **Contenuti** (3.000 €) | Video demo, caso studio, guida "formazione MiFID con l'AI" da scaricare | Uno al mese | — |
+| **Contenuti** (3.000 €) | Video demo, caso studio, guida "formazione MiFID con l'AI" da scaricare | Uno al mese | - |
 | **Webinar** (1.000 €) | Webinar con un partner (ABIFormazione o AIDP) | Uno al mese 4 | Se gli iscritti delle banche della lista sono meno di 15 |
 
 ## 5 · Vendita diretta (13.000 €)
@@ -60,9 +60,9 @@
 
 ## Come si collegano i canali, per una banca della lista
 
-1. **Settimana 1–2:** il responsabile formazione vede gli annunci LinkedIn di Coach.
+1. **Settimana 1-2:** il responsabile formazione vede gli annunci LinkedIn di Coach.
 2. **Settimana 3:** riceve un messaggio personale dal commerciale e un invito a una colazione di lavoro.
-3. **Mese 2–3:** prova il role play dal vivo all'evento ABI, oppure in demo.
+3. **Mese 2-3:** prova il role play dal vivo all'evento ABI, oppure in demo.
 4. **Mese 3:** pilot pagato su 30 consulenti, magari proposto dal suo ente di formazione FBA.
 5. **Mese 6:** contratto su tutta la rete.
 

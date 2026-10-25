@@ -191,7 +191,7 @@ Coach parla a chi compra formazione, quindi il canale principale è **LinkedIn**
 Una conversazione difficile raccontata slide per slide, con il voto del coach alla fine.
 
 - **Slide 1** su campo, titolo in Archivo volt: «Il cliente chiede il 12% di sconto. Che cosa rispondi?»
-- **Slide 2–4** su paper: tre risposte possibili, ognuna con il suo punteggio in JetBrains Mono.
+- **Slide 2-4** su paper: tre risposte possibili, ognuna con il suo punteggio in JetBrains Mono.
 - **Slide 5**: il riscontro del coach con il minuto esatto, poi logo e «Allenati prima che conti».
 
 Testo del post: «Il 12% di sconto chiesto al rinnovo. Tre risposte, tre punteggi. Tu quale daresti? Rispondi nei commenti, domani pubblichiamo il voto del coach.»
@@ -200,11 +200,11 @@ Testo del post: «Il 12% di sconto chiesto al rinnovo. Tre risposte, tre puntegg
 
 Un venditore affronta Giulia due volte.
 
-- **0–3 s:** testo grande su volt: «Tentativo 1».
-- **3–12 s:** il role play va male: risposta esitante, punteggio 2,4 in basso a destra.
-- **12–15 s:** stacco su campo: «Tentativo 11».
-- **15–25 s:** stessa domanda, risposta sicura, punteggio 4,6 che sale con l'anello di progresso.
-- **25–30 s:** logo negativo su campo, «Allenati prima che conti.»
+- **0-3 s:** testo grande su volt: «Tentativo 1».
+- **3-12 s:** il role play va male: risposta esitante, punteggio 2,4 in basso a destra.
+- **12-15 s:** stacco su campo: «Tentativo 11».
+- **15-25 s:** stessa domanda, risposta sicura, punteggio 4,6 che sale con l'anello di progresso.
+- **25-30 s:** logo negativo su campo, «Allenati prima che conti.»
 
 Sottotitoli sempre attivi, in Instrument Sans 600, bianco su fascia campo.
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { coachData } from '../data/mockData';
-import { Play, Calculator, ArrowRight, Zap, Building2, Users } from 'lucide-react';
+import { Calculator, ArrowRight, Building2, Users } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const { hero } = coachData;
@@ -14,7 +14,7 @@ export const HeroSection: React.FC = () => {
             <span className="w-2 h-2 rounded-full bg-volt-text" />
             <span className="font-mono text-ink">{hero.eyebrow}</span>
             <span className="text-ink-muted font-mono text-[11px] hidden sm:inline border-l border-line pl-2 ml-1">
-              Banche 500–3.000 dipendenti
+              Banche 500-3.000 dipendenti
             </span>
           </div>
 
@@ -68,7 +68,7 @@ export const HeroSection: React.FC = () => {
               <Users className="w-3.5 h-3.5 text-volt-text" />
               ICP Primario
             </div>
-            <div className="font-bold text-sm sm:text-base text-ink">Banche 500–3.000 dipendenti</div>
+            <div className="font-bold text-sm sm:text-base text-ink">Banche 500-3.000 dipendenti</div>
             <div className="text-xs text-ink-muted mt-0.5">50 banche target in lista ABM</div>
           </div>
 

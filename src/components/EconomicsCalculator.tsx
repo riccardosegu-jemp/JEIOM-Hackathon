@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { coachData } from '../data/mockData';
-import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export const EconomicsCalculator: React.FC = () => {
   const [userCount, setUserCount] = useState<number>(300);
@@ -103,7 +103,7 @@ export const EconomicsCalculator: React.FC = () => {
               Calcola il risparmio rispetto all'aula tradizionale
             </h3>
             <p className="small text-ink-muted">
-              L'aula tradizionale costa in media 800 € a persona l'anno (forchetta 600–1.000 €), più il costo della filiale scoperta. Coach costa 420 € l'anno (35 €/mese).
+              L'aula tradizionale costa in media 800 € a persona l'anno (forchetta 600-1.000 €), più il costo della filiale scoperta. Coach costa 420 € l'anno (35 €/mese).
             </p>
           </div>
 
